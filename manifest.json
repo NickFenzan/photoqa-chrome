@@ -4,24 +4,23 @@
   "name": "Photo QA",
   "description": "Adds QA buttons to Appworx",
   "author": "Nick Fenzan",
-  "version": "0.1",
+  "version": "1.0.0",
   "update_url": "http://miller.vein/extensions/photo-qa/crx",
   "content_scripts": [
     {
       "matches": ["https://app.rxphoto.com/*"],
       "js": [
-        "lib/jquery-3.1.1.min.js",        //For DOM and AJAX
-        "lib/moment.js",                  //Handle date time
-        "util/control-structure.js",      //Misc functions, mostly program flow
-        "util/finder.js",                 //Common elements and strings pulled from the DOM
-        "util/backend.js",                //Object that can communicate with the web server
-        "util/objects.js",                //Common objects/data structures
-        "dos-review/dos-review.js",       //Buttons to mark dates as reviewed
-        "test-object.js",
+        "lib/jquery-3.1.1.min.js",
+        "lib/moment.js",
+        "util/control-structure.js",
+        "util/finder.js",
+        "util/backend.js",
+        "util/objects.js",
+        "dos-review/dos-watcher.js",
         "bad-photo/bad-photo-dialog.js",
         "bad-photo/bad-photo-button.js",
         "bad-photo/modal-watcher.js",
-        "photoqa.js"                      //Initialization script
+        "photoqa.js"
       ],
       "css": ["photoqa.css"]
     }

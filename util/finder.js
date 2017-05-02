@@ -120,3 +120,7 @@ var Finder = {
     return (text.length) ? text.substring(text.indexOf(":") + 2) : "";
   },
 }
+
+function existsAndVisible(elem){
+  return elem.length && elem.is(":visible");
+}
