@@ -87,27 +87,27 @@ var Finder = {
   },
   problems: {
     angle: () => {
-      return $('#angle').prop("checked");
+      return $('#angle');
     },
     background: () => {
-      return $('#background').prop("checked");
+      return $('#background');
     },
     framing: () => {
-      return $('#framing').prop("checked");
+      return $('#framing');
     },
     lighting: () => {
-      return $('#lighting').prop("checked");
+      return $('#lighting');
     },
     obstructions: () => {
-      return $('#obstructions').prop("checked");
+      return $('#obstructions');
     },
     status: () => {
       var data = new PhotoProblems();
-      data.angle = Finder.problems.angle();
-      data.background = Finder.problems.background();
-      data.framing = Finder.problems.framing();
-      data.lighting = Finder.problems.lighting();
-      data.obstructions = Finder.problems.obstructions();
+      data.angle = Finder.problems.angle().prop("checked");
+      data.background = Finder.problems.background().prop("checked");
+      data.framing = Finder.problems.framing().prop("checked");
+      data.lighting = Finder.problems.lighting().prop("checked");
+      data.obstructions = Finder.problems.obstructions().prop("checked");
       return data;
     }
   },

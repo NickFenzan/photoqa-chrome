@@ -17,7 +17,10 @@
         "util/backend.js",                //Object that can communicate with the web server
         "util/objects.js",                //Common objects/data structures
         "dos-review/dos-review.js",       //Buttons to mark dates as reviewed
-        "bad-photo/report-bad-photo.js",  //Buttons to mark photos as bad
+        "test-object.js",
+        "bad-photo/bad-photo-dialog.js",
+        "bad-photo/bad-photo-button.js",
+        "bad-photo/modal-watcher.js",
         "photoqa.js"                      //Initialization script
       ],
       "css": ["photoqa.css"]

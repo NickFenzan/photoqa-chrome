@@ -16,6 +16,10 @@ var Backend = {
       });
     },
 
+    findExistingBadPhoto: (id) => {
+      return Backend.get("badPhotos/"+id);
+    },
+
     get: (url, data) => {
       return Backend.request("GET", url, data);
     },
