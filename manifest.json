@@ -10,21 +10,21 @@
     {
       "matches": ["https://app.rxphoto.com/*"],
       "js": [
-        "jquery-3.1.1.min.js",  //For DOM and AJAX
-        "moment.js",            //Handle date time
-        "lib.js",               //Misc functions, mostly program flow
-        "finder.js",            //Common elements and strings pulled from the DOM
-        "objects.js",           //Common objects/data structures
-        "backend.js",           //Object that can communicate with the web server
-        "dos-review.js",        //Buttons to mark dates as reviewed
-        "report-bad-photo.js",  //Buttons to mark photos as bad
-        "photoqa.js"            //Initialization script
+        "lib/jquery-3.1.1.min.js",        //For DOM and AJAX
+        "lib/moment.js",                  //Handle date time
+        "util/control-structure.js",      //Misc functions, mostly program flow
+        "util/finder.js",                 //Common elements and strings pulled from the DOM
+        "util/backend.js",                //Object that can communicate with the web server
+        "util/objects.js",                //Common objects/data structures
+        "dos-review/dos-review.js",       //Buttons to mark dates as reviewed
+        "bad-photo/report-bad-photo.js",  //Buttons to mark photos as bad
+        "photoqa.js"                      //Initialization script
       ],
       "css": ["photoqa.css"]
     }
   ],
   "permissions": ["https://*/"],
   "web_accessible_resources": [
-    "bad-photo-dialog.html"
+    "bad-photo/bad-photo-dialog.html"
   ]
 }

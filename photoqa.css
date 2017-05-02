@@ -17,7 +17,10 @@
 }
 .dos-button{
   font: inherit;
-  font-size: 20px;
+  font-size: 1em;
+  line-height: 20px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 .bad-photo-dialog {
   position: absolute;
@@ -42,4 +45,8 @@
 .bad-photo-dialog div.buttons{
   margin-top: 10px;
   text-align: right;
+}
+.reviewed-label {
+  font-size: 1em !important;
+  color: grey;
 }

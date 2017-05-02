@@ -13,7 +13,7 @@ var ReportBadPhoto = {
     }
 
     function injectBadPhotoDialog(){
-      $.get(chrome.extension.getURL("bad-photo-dialog.html"))
+      $.get(chrome.extension.getURL("bad-photo/bad-photo-dialog.html"))
       .done((template)=>{
         var $elem = $(template);
         addEventListeners($elem);

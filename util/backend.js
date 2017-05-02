@@ -17,7 +17,6 @@ var Backend = {
     },
 
     get: (url, data) => {
-      console.log(data);
       return Backend.request("GET", url, data);
     },
 
